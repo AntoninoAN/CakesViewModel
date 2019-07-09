@@ -7,4 +7,5 @@ import java.util.List;
 public interface ViewContract {
     void getListCakes(List<PojoCake> dataSet);
     void initUI();
+    void onError(String error);
 }

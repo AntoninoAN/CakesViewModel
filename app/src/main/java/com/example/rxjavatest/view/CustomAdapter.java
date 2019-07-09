@@ -17,6 +17,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
 
     public void setDataset(List<PojoCake> dataSet){
         this.dataSet = dataSet;
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -38,6 +39,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
 
     @Override
     public int getItemCount() {
-        return 0;
+        return dataSet != null ?
+                dataSet.size() : 0;
     }
 }

@@ -2,6 +2,7 @@ package com.example.rxjavatest.model;
 
 import java.util.List;
 
+
 import io.reactivex.Observable;
 import retrofit2.http.GET;
 
